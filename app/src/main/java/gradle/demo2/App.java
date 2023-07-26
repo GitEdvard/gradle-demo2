@@ -5,7 +5,7 @@ package gradle.demo2;
 
 import com.google.gson.Gson;
 import org.apache.commons.math4.core.jdkmath.JdkMath;
-import referenced.lib.App;
+import referenced.lib.AppReferenced;
 
 public class App {
     public String getGreeting() {
@@ -17,5 +17,7 @@ public class App {
         System.out.println(gson.toJson("Hello Worlds!") );
         double pi = JdkMath.PI;
         System.out.println("pi: " + pi);
+        AppReferenced app2 = new AppReferenced();
+        System.out.println(app2.getGreeting());
     }
 }
