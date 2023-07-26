@@ -11,4 +11,5 @@ plugins {
 }
 
 rootProject.name = 'gradle-demo2'
-include('app')
+include ':app', ':app_ref'
+project(':app_ref').setProjectDir(new File('/home/edvard/sources/test/referenced-lib/app_ref'))

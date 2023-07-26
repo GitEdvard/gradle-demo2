@@ -5,6 +5,7 @@ package gradle.demo2;
 
 import com.google.gson.Gson;
 import org.apache.commons.math4.core.jdkmath.JdkMath;
+import referenced.lib.App;
 
 public class App {
     public String getGreeting() {
